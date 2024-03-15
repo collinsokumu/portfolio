@@ -1,0 +1,96 @@
+body {
+  font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #b6c7e7;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  header img {
+    border-radius: 100%; /* Round profile picture */
+    width: 150px; /* Adjust image width as needed */
+    display: block; /* Display image on a new line */
+    margin: 0 auto 10px; /* Add margin below image */
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #intro {
+    background-color: #f5f5f5;
+    /* Add background image (optional) */
+    background: url("bg-image.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #skills li {
+    display: inline-block; /* Display skills side-by-side */
+    margin-right: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #skills li img {
+    width: 50px; /* Adjust icon size as needed */
+    margin-right: auto; /* Add margin between icon and text */
+  }
+  
+  #contact {
+    background-color: #eee;
+    text-align: center;
+  }
+  
+  #contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #contact li {
+    margin-bottom: 5px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media (max-width: 768px) {
+    section {
+      width: 80%;
+    }
+    h1, h2 {
+      font-size: 1.2rem;
+    }
+    header img {
+      width: 120px; /* Adjust image width for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    section {
+      width: 90%;
+    }
+    #skills li {
+      display: block; /* Stack skills vertically on very small screens */
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
